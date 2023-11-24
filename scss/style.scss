@@ -1,0 +1,36 @@
+@import "variaveis-funcoes-nativas.scss";
+@import "mixins-placeholder-responsivo.scss";
+
+section {
+  background-color: $cor-quartenaria;
+  @extend %container;
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    @include separador;
+    @include titulo(mobile) {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    @include titulo(mobile) {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    @include botao;
+    &:hover {
+      color: darken($cor-primaria, 10%);
+    }
+  }
+}

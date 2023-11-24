@@ -1,0 +1,87 @@
+section {
+  width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  section {
+    width: initial;
+    padding: 10px;
+  }
+}
+
+.separador-1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #ccaaff;
+}
+
+.separador-2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: #ccaaff;
+}
+
+.separador-3::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  background-color: #ccaaff;
+}
+
+.separador-4::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 3px;
+  background-color: #ccaaff;
+}
+
+section {
+  background-color: #f2f2f2;
+}
+section h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+section h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #ccaaff;
+}
+@media (max-width: 600px) {
+  section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+section a {
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #ccaaff;
+}
+section a:hover {
+  color: #ad77ff;
+}/*# sourceMappingURL=style.css.map */

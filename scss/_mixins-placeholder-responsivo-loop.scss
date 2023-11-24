@@ -1,0 +1,46 @@
+@import "variaveis-funcoes-nativas.scss";
+
+%container {
+  width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    width: initial;
+    padding: 10px;
+  }
+}
+
+@mixin titulo($dispositivo) {
+  @if $dispositivo == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+@mixin separador {
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: $cor-primaria;
+  }
+}
+
+@for $i from 1 through 4 {
+  .separador-#{$i} {
+    &::after {
+      content: "";
+      display: block;
+      width: 100px * $i;
+      height: 3px;
+      background-color: $cor-primaria;
+    }
+  }
+}
+
+@mixin botao {
+  padding: 8px 16px;
+  background-color: $cor-primaria;
+}
